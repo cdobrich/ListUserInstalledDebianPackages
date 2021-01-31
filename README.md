@@ -23,6 +23,20 @@ There are 3 modes available for how to use this program. Execute the program on 
 
 Mode 3 is the default and will be run if no specifying arguments are provided.
 
+## Debian Package
+
+There is a folder called 'ListUserInstalledPackages' which contains the 'DEBIAN' package info directory (including its 'control' file), for potential Debian-package generation. Here are the simple steps to generate a debian package file:
+
+1. Copy the python file into the 'opt/' directory.
+
+> cp ListUserInstalledPackages.py ListUserInstalledPackages/opt/
+ 
+2. Run this command at the top of the repository:
+
+dpkg-deb --build ListUserInstalledPackages
+
+This will create a deb file with the name of the target build directory. In this example, it will be named 'ListUserInstalledPackages.deb'.
+
 ### Code Nodes
 
 Some of this code could be separated into callable functions, but in the interests of development time and keeping the code simple, they have not been separated.
