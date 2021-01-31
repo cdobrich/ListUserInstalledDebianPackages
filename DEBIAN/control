@@ -1,0 +1,7 @@
+Package: ListUserInstalledPackages 
+Version: 1.0.1
+Priority: optional
+Architecture: all
+Depends: python3
+Maintainer: cdobrich@gmail.com 
+Description: Lists all user manually installed packages
