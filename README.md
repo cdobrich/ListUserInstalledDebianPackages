@@ -33,7 +33,7 @@ There is a folder called 'ListUserInstalledPackages' which contains the 'DEBIAN'
  
 2. Run this command at the top of the repository:
 
-dpkg-deb --build ListUserInstalledPackages
+> dpkg-deb --build ListUserInstalledPackages
 
 This will create a deb file with the name of the target build directory. In this example, it will be named 'ListUserInstalledPackages.deb'.
 
